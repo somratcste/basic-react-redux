@@ -18,11 +18,14 @@ const counterSlice = createSlice({
         toggle(state) {
             state.showCounter = !state.showCounter;
         },
+        reset(state) {
+            state.counter = 0;
+        }
     },
 });
 
 const initialAuthState = {
-    isAuthenticated: false,
+    isAuthenticated: false
 };
 
 const authSlice = createSlice({
